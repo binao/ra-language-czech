@@ -1,33 +1,49 @@
-module.exports = {
+import { TranslationMessages } from 'ra-core';
+
+const czechMessages: TranslationMessages = {
     ra: {
         action: {
+            add: 'Přidat',
+            add_filter: 'Přidat filtr',
+            back: 'Jít zpět',
+            bulk_actions: '%{smart_count} vybráno',
+            cancel: 'Zrušit',
+            clear_input_value: 'Smazat hodnotu',
+            clone: 'Klonovat',
+            confirm: 'Potvrdit',
             delete: 'Smazat',
-            show: 'Ukázat',
-            list: 'Seznam',
+            export: 'Exportovat',
+            show: 'Zobrazit',
+            list: 'Listovat',
             save: 'Uložit',
+            search: 'Hledat',
             create: 'Vytvořit',
             edit: 'Upravit',
             sort: 'Seřadit',
-            cancel: 'Zrušit',
             undo: 'Vrátit',
             refresh: 'Obnovit',
-            add: 'Přidat',
             remove: 'Odstranit',
-            add_filter: 'Přidat filtr',
             remove_filter: 'Odstranit filtr',
-            back: 'Jít zpět',
-            bulk_actions: '%{smart_count} vybráno',
+            unselect: 'Zrušit výběr',
+            expand: 'Rozbalit',
+            close: 'Zavřít',
+            open_menu: 'Otevřít menu',
+            close_menu: 'Zavřít menu'
         },
         boolean: {
             true: 'Ano',
             false: 'Ne',
+            null: ' ',
         },
         page: {
-            list: '%{name} Seznam',
-            edit: '%{name} #%{id}',
-            show: '%{name} #%{id}',
             create: 'Vytvořit %{name}',
             dashboard: 'Dashboard',
+            edit: '%{name} #%{id}',
+            empty: 'Zatím žádný %{name}',
+            error: 'Něco se pokazilo',
+            invite: 'Chcete přidat?',
+            list: '%{name}',
+            show: '%{name} #%{id}',
             not_found: 'Nenalezeno',
             loading: 'Načítání',
         },
@@ -45,14 +61,21 @@ module.exports = {
                 many_missing: 'Minimálně jedna z referencí se nezdá býti nadále dostupná',
                 single_missing: 'Reference se nezdá býti nadále dostupná.',
             },
+            password: {
+                toggle_visible: 'Skrýt heslo',
+                toggle_hidden: 'Zobrazit heslo',
+            }
         },
         message: {
             yes: 'Ano',
             no: 'Ne',
             are_you_sure: 'Jste si jistý?',
             about: 'O',
-            not_found: 'Nic nebylo nalezeno',
+            details: 'Podrobnosti',
+            error: 'Nastala chyba a váš požadavek nemohl být zpracován.',
+            not_found: 'Nic nebylo nalezeno.',
             loading: 'Stránka se načítá, prosím strpení',
+            unsaved_changes: 'Některé změny nebyly uloženy. Chcete je ignorovat?',
             invalid_form: 'Formulář není validní. Prosím zkontrolujte chyby.',
             delete_title: 'Smazat %{name} #%{id}',
             delete_content: 'Jste si jistý, že chcete smazat tuto položku?',
@@ -66,10 +89,19 @@ module.exports = {
             page_out_from_end: 'Nelze se přepnout za poslední stranou',
             page_out_from_begin: 'Nelze se přepnout před stranu 1',
             page_range_info: '%{offsetBegin}-%{offsetEnd} z %{total}',
+            page_rows_per_page: 'Záznamů na stránku: ',
             next: 'Další',
             prev: 'Předchozí',
+            skip_nav: 'Přeskočit na obsah',
+        },
+        sort: {
+            sort_by: "Seřadit podle %{field} %{order}",
+            ASC: "vzestupně",
+            DESC: "sestupně",
         },
         auth: {
+            auth_check_error: "Pro pokračování se prosím přihlaste",
+            user_menu: "Profil",
             username: 'Uživatelské jméno',
             password: 'Heslo',
             sign_in: 'Přihlásit se',
@@ -80,10 +112,14 @@ module.exports = {
             updated: 'Prvek aktualizován |||| %{smart_count} prvků aktualizováno',
             created: 'Prvek vytvořen',
             deleted: 'Prvek smazán |||| %{smart_count} prvků smazáno',
-            bad_item: 'Nesprávný prvek',
+            bad_item: 'Špatný prvek',
             item_doesnt_exist: 'Prvek neexistuje',
             http_error: 'Chyba komunikace serveru',
+            i18n_error: 'Nelze načíst překlady pro vybraný jazyk',
+            data_provider_error:
+                'dataProvider chyba. Pro více detailů zkontrolujte konzoli prohlížeče.',
             canceled: 'Akce zrušena',
+            logged_out: 'Relace ukončena'
         },
         validation: {
             required: 'Povinné pole',
@@ -96,5 +132,7 @@ module.exports = {
             oneOf: 'Musí splňovat jedno z: %{options}',
             regex: 'Musí být ve specifickém formátu (regexp): %{pattern}',
         },
-    },
-};
+    }
+}
+
+export default czechMessages
