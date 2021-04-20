@@ -2,14 +2,21 @@
     "name": "ra-language-czech",
     "version": "2.0.0",
     "description": "Czech messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
-    "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "prepack": "npm run build",
+        "build": "npm run build-cjs && npm run build-esm",
+        "build-cjs": "rimraf ./lib && tsc",
+        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+        "watch": "tsc --outDir esm --module es2015 --watch"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/binao/ra-language-czech.git"
     },
+    "files": ["*.md", "lib","esm", "src"],
+    "main": "lib/index.js",
+    "module": "esm/index.js",
+    "types": "esm/index.d.ts",
     "keywords": [
         "react",
         "react-admin",
@@ -20,5 +27,8 @@
     "bugs": {
         "url": "https://github.com/binao/ra-language-czech/issues"
     },
-    "homepage": "https://github.com/binao/ra-language-czech#readme"
+    "homepage": "https://github.com/binao/ra-language-czech#readme",
+    "dependencies": {
+        "ra-core": "^3.14.4"
+    }
 }
