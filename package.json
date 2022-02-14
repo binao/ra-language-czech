@@ -13,7 +13,12 @@
         "type": "git",
         "url": "git+https://github.com/binao/ra-language-czech.git"
     },
-    "files": ["*.md", "lib","esm", "src"],
+    "files": [
+        "*.md",
+        "lib",
+        "esm",
+        "src"
+    ],
     "main": "lib/index.js",
     "module": "esm/index.js",
     "types": "esm/index.d.ts",
