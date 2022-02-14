@@ -1,6 +1,6 @@
 {
     "name": "ra-language-czech",
-    "version": "3.19.1",
+    "version": "3.19.8",
     "description": "Czech messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
     "scripts": {
         "prepack": "npm run build",
@@ -34,6 +34,6 @@
     },
     "homepage": "https://github.com/binao/ra-language-czech#readme",
     "dependencies": {
-        "ra-core": "^3.19.1"
+        "ra-core": "^3.19.8"
     }
 }
