@@ -110,6 +110,7 @@ const czechMessages: TranslationMessages = {
             i18n_error: 'Nelze načíst překlady pro vybraný jazyk',
             item_doesnt_exist: 'Prvek neexistuje',
             logged_out: 'Relace ukončena',
+            not_authorized: 'Nemáte oprávnění k přístupu.',
             updated: 'Prvek aktualizován |||| %{smart_count} prvků aktualizováno',
         },
         page: {
