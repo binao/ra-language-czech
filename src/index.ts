@@ -22,9 +22,11 @@ const czechMessages: TranslationMessages = {
             list: 'Listovat',
             move_down: "Dolů",
             move_up: "Nahoru",
+            open: 'Otevřít',
             open_menu: 'Otevřít menu',
             refresh: 'Obnovit',
             remove: 'Odstranit',
+            remove_all_filters: 'Odstranit všechny filtry',
             remove_filter: 'Odstranit filtr',
             save: 'Uložit',
             search: 'Hledat',
@@ -32,6 +34,7 @@ const czechMessages: TranslationMessages = {
             select_row: "Vybrat řádek",
             show: 'Zobrazit',
             sort: 'Seřadit',
+            toggle_theme: 'Přepnout téma',
             undo: 'Vrátit',
             unselect: 'Zrušit výběr',
             update: "Aktualizovat",
@@ -88,15 +91,20 @@ const czechMessages: TranslationMessages = {
             yes: 'Ano',
         },
         navigation: {
+            current_page: 'Stránka %{page}',
+            first: 'První stránka',
+            last: 'Poslední stránka',
             next: 'Další',
             no_more_results: 'Stránka číslo %{page} je mimo rozsah. Zkuste předchozí.',
             no_results: 'Žádné výsledky nenalezeny',
+            page: 'Jít na stránku %{page}',
             page_out_from_begin: 'Nelze se přepnout před stranu 1',
             page_out_from_end: 'Nelze se přepnout za poslední stranou',
             page_out_of_boundaries: 'Stránka číslo %{page} je mimo rozsah',
             page_range_info: '%{offsetBegin}-%{offsetEnd} z %{total}',
             page_rows_per_page: 'Záznamů na stránku: ',
-            prev: 'Předchozí',
+            partial_page_range_info: '%{offsetBegin}-%{offsetEnd} z víc než %{offsetEnd}',
+            previous: 'Předchozí',
             skip_nav: 'Přeskočit na obsah',
         },
         notification: {
@@ -141,7 +149,33 @@ const czechMessages: TranslationMessages = {
             regex: 'Musí být ve specifickém formátu (regexp): %{pattern}',
             required: 'Povinné pole',
         },
+        saved_queries: {
+            label: 'Uložené dotazy',
+            query_name: 'Jméno dotazu',
+            new_label: 'Uložit aktuální dotaz...',
+            new_dialog_title: 'Uložit aktuální dotaz jako',
+            remove_label: 'Odstranit uložený dotaz',
+            remove_label_with_name: 'Odstranit dotaz "%{name}"',
+            remove_dialog_title: 'Odstranit uložený dotaz?',
+            remove_message:
+                'Jste si jistí že chcete odstranit tuto položku z vašeho seznamu uložených dotazů?',
+            help: 'Vyfiltrovat seznam a uložit tento dotaz na později',
+        },
+        configurable: {
+            customize: 'Přizpůsobit',
+            configureMode: 'Konfigurovat tuto stránku',
+            inspector: {
+                title: 'Inspektor',
+                content: 'Pro konfiguraci UI elementů aplikace na ně najeďte myší',
+                reset: 'Resetovat nastavení',
+            },
+            SimpleList: {
+                primaryText: 'Primární text',
+                secondaryText: 'Sekundární text',
+                tertiaryText: 'Terciární text',
+            },
+        },
     }
-}
+};
 
 export default czechMessages
