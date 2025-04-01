@@ -1,6 +1,6 @@
 {
     "name": "ra-language-czech",
-    "version": "3.19.8",
+    "version": "5.7.0",
     "description": "Czech messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
     "scripts": {
         "prepack": "npm run build",
